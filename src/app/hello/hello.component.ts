@@ -6,7 +6,9 @@ import { CardConfig } from 'src/types';
   selector: 'card',
   template: `
   <div #card style="background:" class="card-wrap">
-  <div style="background:grey" class="card-title"><p>{{cardConfig.title}}</p></div>
+  <div style="" class="card-title"><p>{{cardConfig.title}}</p>
+  <hr style="width:240px" class="w3-opacity">
+  </div>
   <div class="card" [ngStyle]="cardStyle()">
     <div class="card-bg" [ngStyle]="cardBgTransform()">
       <div class="image-placeholder">

@@ -16,37 +16,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </style>
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="assets/1_IRGHmiGsa16stedQvIaZfw.gif" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#profile" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>PROFILE</p>
-  </a>
-  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PROJECTS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-<!--
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#profile" class="w3-bar-item w3-button" style="width:25% !important">PROFILE</a>
-    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+  <app-navbar></app-navbar>
+
 
 <!-- Page Content  -->
 <div class="w3-padding-large" id="main">
@@ -64,7 +35,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p>Hello i'm mohit nagar and i'm a unknown developer...
       </p>
       <h3 class="w3-padding-16 w3-text-light-grey">Profile</h3>
-          <hr style="width:200px" class="w3-opacity">
+      <hr style="width:200px" class="w3-opacity">
 
         <app-pro1></app-pro1>
 
@@ -97,6 +68,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="projects">
   <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
 
   <app-projectdetail></app-projectdetail>
 
