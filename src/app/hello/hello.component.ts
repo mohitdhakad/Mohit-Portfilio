@@ -5,7 +5,7 @@ import { CardConfig } from 'src/types';
 @Component({
   selector: 'card',
   template: `
-  <div #card style="background:" class="card-wrap">
+  <div #card style="background:" class="card-wrap" >
   <div style="" class="card-title"><p>{{cardConfig.title}}</p>
   <hr style="width:240px" class="w3-opacity">
   </div>
